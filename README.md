@@ -10,7 +10,7 @@ Use both rules for best results.
 Here is an example for NTLMv2 hashes:
 
 ```
-hashcat64.bin -a 0 -m 5600 hashes.txt passphrases.txt -r rule1.hashcat -r rule2.hashcat -O -w 2
+./hashcat64.bin -a 0 -m 0 hashes.txt ~/passphrase-wordlist/passphrases.txt -r ~/passphrase-wordlist/rule1.rule -r ~/passphrase-wordlist/rule2.rule -w 2
 ```
 
 # Sources Used
